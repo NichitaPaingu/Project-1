@@ -1,0 +1,10 @@
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /GitProjects/project1/error.php
+# 404 - не существущий адрес сайта
+# ErrorDocument 500 /phpProjects/project1/error.php
+# 500- ошибка сервера
+
+#RewriteRule ^register?$ /phpProjects/project1/register.php [NC,L]
+#Правила переписывания  [настройки]
+#в бесплатной версии нельзя указать адреса

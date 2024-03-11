@@ -1,0 +1,193 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    border: solid 5px silver;
+    padding: 15px 100px;
+    background: cadetblue;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    transition: all 500ms ease;
+    border: solid 5px silver;
+    border-radius: 5px;
+    text-decoration: none;
+}
+header nav{
+    display: flex;
+}
+header nav a.btn {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all 500ms ease;
+    margin-right: 10px;
+}
+header nav a {
+    border: solid 5px silver;
+    border-radius: 5px;
+    align-items: center;
+}
+
+/* Исправленный селектор для hover-эффекта */
+header nav a:hover {
+    color: grey;
+}
+header .logo:hover {
+    color: purple;
+}
+.container {
+    display: flex;
+    flex:1;
+    margin-bottom: 5px;
+}
+main {
+    flex:1;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 10px;
+    width: 70%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+aside{
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 30%;
+    box-sizing: border-box;
+}
+aside ul li{
+    margin-top: 10px;
+}
+form label{
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+form input,
+form textarea{
+    width: 100%;
+    resize: vertical;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding:15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+form button{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(255, 240, 221);
+    color: #42410c;
+    transition: transform 500ms ease;
+}
+form button:hover{
+    color: purple;
+}
+.error-mess {
+    color: #de7474;
+    margin: 10px 0;
+    font-weight: 600;
+    display: none;
+}
+.book-container{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2%;
+
+}
+.book-image img {
+    max-width: 250px; /* Задайте максимальную ширину изображения, чтобы ограничить его размер */
+    margin-right: 10px; /* Установите отступ справа для изображения */
+}
+.book-info {
+    max-width: 50%; /* Задайте максимальную ширину для блока с информацией */
+    margin-left: 2%;
+
+}
+.comment{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+div .book-info a{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(255, 240, 221);
+    color: #42410c;
+    transition: transform 500ms ease;
+    text-decoration: none;
+    margin: auto;
+
+}
+a.posts{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(255, 240, 221);
+    color: #42410c;
+    transition: transform 500ms ease;
+    text-decoration: none;
+    margin: 5px;
+}
+div .book-info a:hover{
+    color: purple;
+}
+#add_book_new,
+#enter{
+    display: none;
+    margin-top: 1%;
+    text-decoration: none;
+}
+.coment {
+    width: 30%;
+    background: rgb(255, 240, 221);
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #42410c;
+    margin-top: 10px;
+}
+div .comments{
+    margin-bottom: 1%;
+}
+footer{
+    background: cadetblue;
+    border: solid 5px silver;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    box-sizing: border-box;   
+    text-align: center;
+}
+
+
+
